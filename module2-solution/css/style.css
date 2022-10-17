@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box{
+    width: 20%;
+    height: 200px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+.zaka {
+    border: 3px solid black;
+    background-color: gray;
+}
+
+.wox {
+    border: 3px solid black;
+    background-color: gray;
+}
+
+.calyx {
+    border: 3px solid black;
+    background-color: gray;
+}
+
+h2 {
+    text-align: right;
+    border: 2px solid black;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: inline;
+}
+
+#H1 {
+    position: relative;
+    left: 160px;
+    bottom: 23px;
+    font-weight: bold;
+    background-color: pink;
+}
+
+#H2 {
+    position: relative;
+    left: 144px;
+    bottom: 23px;
+    background-color: red;
+}
+
+#H3 {
+    position: relative;
+    left: 106px;
+    bottom: 23px;
+    background-color: yellow;
+}
+
+p {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .box {
+        width: 40%;
+    }
+    #H1 {
+        position: relative;
+        left: 310px;
+    }
+    #H2 {
+        position: relative;
+        left: 292px;
+    }
+
+    #H3 {
+        position: relative;
+        left: 255px;
+
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .box {
+        width: 90%;
+    }
+    #H1 {
+        position: relative;
+        left: 570px;
+    }
+    #H2 {
+        position: relative;
+        left: 554px;
+    }
+    #H3{
+        position: relative;
+        left: 516px;
+    }
+}
