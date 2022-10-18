@@ -5,7 +5,7 @@
 }
 .Container {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,11 +21,11 @@ h1 {
 }
 
 .box{
-    width: 20%;
+    width: 30%;
     height: 200px;
     margin: 20px;
     box-sizing: border-box;
-    font-size: 50px;
+    font-size: 1px;
 }
 
 .zaka {
@@ -45,57 +45,73 @@ h1 {
 
 h2 {
     text-align: right;
-    border: 2px solid black;
-    font-size: 20px;
-    box-sizing: border-box;
-    padding: 5px;
+    border: 2px solid black; 
+    text-decoration: none;
     display: inline;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    margin-inline-start: 312px;     
+    position: relative;
+    top: 4px;
+    right: 4px;
 }
 
+
 #H1 {
-    position: relative;
-    left: 160px;
-    bottom: 23px;
-    font-weight: bold;
     background-color: pink;
 }
 
 #H2 {
-    position: relative;
-    left: 144px;
-    bottom: 23px;
     background-color: red;
 }
 
 #H3 {
-    position: relative;
-    left: 106px;
-    bottom: 23px;
     background-color: yellow;
 }
 
 p {
     font-size: 15px;
+    margin: 30px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 1200px){
     .box {
         width: 40%;
+        margin: 20px;
     }
-    #H1 {
+    h2{
         position: relative;
-        left: 310px;
+        right: 44px;
     }
-    #H2 {
+@media screen {
+    h2 {
         position: relative;
-        left: 292px;
+        left: 12px;
     }
-
-    #H3 {
+        
+    }
+}
+@media screen and (max-width: 900px){
+    .box{
+        width: 40%;
+        margin: 35px;
+    }
+}
+@media screen and (max-width: 852px) {
+    h2 {
         position: relative;
-        left: 255px;
-
+        right: 300px;
     }
+    
+}
+@media screen and (max-width: 772) {
+    h2 {
+        position: relative;
+        right: 200px;
+    }
+    
 }
 
 
@@ -103,16 +119,23 @@ p {
     .box {
         width: 90%;
     }
-    #H1 {
+    h2 {
         position: relative;
-        left: 570px;
+        left: 307px;
     }
-    #H2 {
+}
+@media  screen and (max-width: 620px) {
+    h2{
         position: relative;
-        left: 554px;
+        right: 700px;
     }
-    #H3{
-        position: relative;
-        left: 516px;
+    
+}
+@media screen and (max-width: 345px) {
+    .box {
+        margin: 30px;
+    }
+    h2 {
+        text-align: center;
     }
 }
